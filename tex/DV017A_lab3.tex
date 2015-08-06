@@ -1,0 +1,117 @@
+% ==============================================================================
+%
+%                                    DV017A
+%                        Inledande Programmering i Java
+%                                Laboration #4
+%
+% Author:   Jonas Sjöberg
+%           Högskolan i Gävle
+%           tel12jsg@student.hig.se
+%           https://github.com/jonasjberg
+%
+% License:  Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+%           International.  See LICENSE.md for full licensing information.
+% ==============================================================================
+
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\inputencoding{utf8}
+\usepackage[swedish]{babel}
+\usepackage[swedish]{isodate}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{fullpage}
+
+%\setcounter{section}{-1}
+
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{graphicx}
+
+\usepackage{minted}
+\usemintedstyle{bw}
+
+\usepackage{verbatim}
+\usepackage{fancyvrb}
+\usepackage{listings}
+
+%\usepackage{natbib}
+%\bibliographystyle{plain}
+
+\usepackage[pdfusetitle,bookmarks=true,
+ bookmarksnumbered=true,bookmarksopen=false,
+ breaklinks=false,pdfborder={0 0 0},backref=false,
+ colorlinks=false]{hyperref}
+
+\newmintedfile[javacode]{java}{
+%bgcolor=mintedbackground,
+%fontfamily=tt,
+fontsize=\footnotesize,
+linenos=true,
+numberblanklines=true,
+numbersep=12pt,
+numbersep=5pt,
+%gobble=0,
+frame=lines,
+%framerule=0.4pt,
+framesep=2mm,
+funcnamehighlighting=true,
+tabsize=4,
+obeytabs=false,
+mathescape=false
+samepage=false,
+showspaces=false,
+showtabs =false,
+texcl=false,
+}
+
+\title{DV017A \\ Java-programmering \\ Laboration 4}
+
+\author{\\
+  Jonas Sjöberg\\
+  860224\\
+  Högskolan i Gävle\\
+  \texttt{tel12jsg@tudent.hig.se}\\
+  %\email{tel12jsg@tudent.hig.se}\\
+  %\url{https://github.com/jonasjberg}\\
+  \texttt{https://github.com/jonasjberg}\\
+}
+
+
+%\isodate{}
+\date{}
+
+\begin{document}
+    \maketitle
+
+    \begin{center}
+    \begin{tabular}{l r}
+        Datum: & \isodate \today \par \\
+        Kursansvarig lärare: & Atique Ullah
+    \end{tabular}
+    \end{center}
+
+    \medskip
+
+    \begin{abstract}
+Laborationsrapport för \emph{DV017A -- Inledande programmering i Java},
+distanskurs på Högskolan i Gävle. Blandade uppgifter i grundläggande praktisk
+programmering i Java.  Innehåller labinstruktioner, egna lösningar, källkod,
+skärmdumpar och kommentarer.
+    \end{abstract}
+
+    \newpage
+    \setcounter{tocdepth}{3}
+    \tableofcontents
+    \listoffigures
+    \newpage
+
+    %\input{tex/intro}
+    \input{tex/uppg01}
+    \input{tex/uppg02}
+    \input{tex/uppg03}
+
+    %\bibliography{tex/referenser}
+
+
+\end{document}
