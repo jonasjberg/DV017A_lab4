@@ -18,7 +18,7 @@ public class UserInputFilter
      * @param msg   meddelande vid förfrågan
      * @return      ett positivt heltal
      */
-    public int getPositiveInt(String msg)
+    public static int getPositiveInt(String msg)
     {
         @SuppressWarnings("resource")
         Scanner scan = new Scanner(System.in);
