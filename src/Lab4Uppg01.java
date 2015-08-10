@@ -1,8 +1,3 @@
-import java.util.List;
-import java.util.Vector;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
  * DV017A :: Grundläggande programmering i Java
  * 860224 Jonas Sjöberg
@@ -12,22 +7,27 @@ import java.util.logging.Logger;
  * Labb #4    Uppgift 1
  */
 
+import java.util.List;
+import java.util.Vector;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 public class Lab4Uppg01
 {
     private final static String TXT_QUERY            = "Hur många tal vill du mata in (max 30)? ";
     private final static int    MAX_NUMBER_OF_INPUTS = 30;
     private final static int    MIN_NUMBER_OF_INPUTS = 0;
-
-    private static Logger        logger  = Logger.getAnonymousLogger();
+    
     private static List<Integer> numbers = new Vector<Integer>();
     private static int           sum;
     private static double        average;
     private static int           min;
     private static int           max;
 
-    /**
-     * 
-     */
+    /* Använder en "Logger" för att hantera debug-meddelanden */
+    private static Logger        logger  = Logger.getAnonymousLogger();
+    
+    /* MAIN */
     public static void main(String[] args)
     {
         /* Debug-meddelanden av/på */
