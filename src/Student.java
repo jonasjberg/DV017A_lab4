@@ -1,4 +1,3 @@
-
 /**
  * DV017A :: Grundläggande programmering i Java
  * 860224 Jonas Sjöberg
@@ -43,7 +42,7 @@ public class Student extends Person
      * Ändrar kurs enligt parameterns värde.
      * @param kurs      ny kurs
      */
-    private void andraKurs(String kurs)
+    public void andraKurs(String kurs)
     {
         if (kurs != null)
             this.kurs = kurs;
@@ -55,7 +54,7 @@ public class Student extends Person
      * Ändra betyg enligt parameterns värde.
      * @param betyg     nytt betyg
      */
-    private void andraBetyg(char betyg)
+    public void andraBetyg(char betyg)
     {
         this.betyg = betyg;
     }
@@ -64,7 +63,7 @@ public class Student extends Person
      * Ändra skola enligt parameterns värde.
      * @param skola     ny skola
      */
-    private void andraSkola(String skola)
+    public void andraSkola(String skola)
     {
         if (skola != null)
             this.skola = skola;
@@ -76,7 +75,7 @@ public class Student extends Person
      * Returnerar kurs studenten är anmäld till.
      * @return      studentens kurs
      */
-    private String hamtaKurs()
+    public String hamtaKurs()
     {
         if (kurs != null)
             return kurs;
@@ -88,7 +87,7 @@ public class Student extends Person
      * Returnerar studentens betyg.
      * @return      studentens betyg
      */
-    private char hamtaBetyg()
+    public char hamtaBetyg()
     {
         return betyg;
     }
@@ -97,7 +96,7 @@ public class Student extends Person
      * Returnerar studentens skola.
      * @return      studentens skola
      */
-    private String hamtaSkola()
+    public String hamtaSkola()
     {
         if (skola != null)
             return skola;

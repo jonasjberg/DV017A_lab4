@@ -56,5 +56,4 @@ public class Lab4Uppg02
 
         System.out.println(("Räntesats:   " + Konto.avlasRantesats()));
     }
-
 }
