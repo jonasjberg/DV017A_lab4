@@ -7,7 +7,7 @@
  * Labb #4    Uppgift 3
  */
 
-/* Eclipse-projektet för Labb #2 länkas in till det aktuella projektet så att
+/* Eclipse-projektet för Labb #2 länkas in i det aktuella projektet så att
  * paketet 'main' och klassen 'Person' blir tillgängliga.  */
 import main.Person;
 
