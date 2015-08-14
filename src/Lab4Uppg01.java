@@ -107,9 +107,7 @@ public class Lab4Uppg01
      */
     private static double getAverage(List<Integer> numbers)
     {
-        int sum = getSum(numbers);
-
-        double average = sum / numbers.size();
+        double average = getSum(numbers) / numbers.size();
 
         logger.info("average = " + sum);
         return average;
