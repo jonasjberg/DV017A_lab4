@@ -6,7 +6,6 @@
  *  tel12jsg@student.hig.se
  *
  *  Labb #4
- *
  */
 
 import java.util.Scanner;

@@ -14,9 +14,9 @@ import java.util.logging.Logger;
 
 public class Lab4Uppg01
 {
-    private final static String TXT_QUERY            = "Hur många tal vill du mata in (max 30)? ";
-    private final static int    MAX_NUMBER_OF_INPUTS = 30;
-    private final static int    MIN_NUMBER_OF_INPUTS = 0;
+    private final static String  TXT_QUERY            = "Hur många tal vill du mata in (max 30)? ";
+    private final static int     MAX_NUMBER_OF_INPUTS = 30;
+    private final static int     MIN_NUMBER_OF_INPUTS = 0;
 
     private static List<Integer> numbers = new Vector<Integer>();
     private static int           sum;
@@ -27,7 +27,6 @@ public class Lab4Uppg01
     /* Använder en "Logger" för att hantera debug-meddelanden */
     private static Logger        logger  = Logger.getAnonymousLogger();
 
-    /* MAIN */
     public static void main(String[] args)
     {
         /* Debug-meddelanden av/på */
@@ -94,8 +93,8 @@ public class Lab4Uppg01
         int sum = 0;
 
         for (Integer n : numbers) {
-            logger.info("sum = " + sum);
             sum += n;
+            logger.info("sum = " + sum);
         }
 
         return sum;
@@ -127,12 +126,12 @@ public class Lab4Uppg01
         int min = Integer.MAX_VALUE;
 
         do {
-            logger.info("min = " + min);
-
             if (numbers.get(index) < min)
                 min = numbers.get(index);
 
             index++;
+            logger.info("min = " + min);
+
         } while (index < numbers.size());
 
         return min;
@@ -149,12 +148,12 @@ public class Lab4Uppg01
         int max = Integer.MIN_VALUE;
 
         do {
-            logger.info("max = " + max);
-
             if (numbers.get(index) > max)
                 max = numbers.get(index);
 
             index++;
+            logger.info("max = " + max);
+
         } while (index < numbers.size());
 
         return max;

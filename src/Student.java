@@ -1,3 +1,4 @@
+
 /**
  * DV017A :: Grundläggande programmering i Java
  * 860224 Jonas Sjöberg
@@ -102,5 +103,28 @@ public class Student extends Person
             return skola;
         else
             return INGEN_SKOLA;
+    }
+
+    /**
+     * Auto-genererad med Eclipse ("source" --> "Generate toString()...") och
+     * sedan modifierad för att inkludera hantering av plattformsspecifika
+     * nyradsmarkeringar.
+     */
+    @Override
+    public String toString()
+    {
+        /* Plattformsspecifik nyradsmarkör. */
+        String NEWLINE = System.getProperty("line.separator");
+        StringBuilder str = new StringBuilder();
+
+        /* Anropa först 'Person'-objektets 'toString()'-metod. */
+        str.append(super.toString());
+
+        /* Utöka sedan med 'Student'-objektets data. */
+        str.append("Skola:        " + skola + NEWLINE);
+        str.append("Kurs:         " + kurs + NEWLINE);
+        str.append("Betyg:        " + betyg + NEWLINE);
+
+        return str.toString();
     }
 }

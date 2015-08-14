@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# compile using latexmk
+# needs pygmentize for highlighting (pip install pygmentize)
+
+latexmk tex/DV017A_lab4.tex -outdir=build -pdf -interaction=nonstopmode -shell-escape
+

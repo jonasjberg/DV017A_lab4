@@ -57,7 +57,7 @@ public class Konto
     }
 
     /**
-     *  Returnerar kontots saldo. 
+     *  Returnerar kontots saldo.
      * @return      kontots saldo
      */
     public double hamtaSaldo()

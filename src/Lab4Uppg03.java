@@ -15,6 +15,9 @@ import main.Person;
  */
 public class Lab4Uppg03
 {
+    /* Plattformsspecifik nyradsmarkör. */
+    private static String NEWLINE = System.getProperty("line.separator");
+
     private static Person  person;
     private static Student student;
 
@@ -26,53 +29,58 @@ public class Lab4Uppg03
         System.exit(0);
     }
 
+    /**
+     * Skapar ett nytt 'Person'-objekt och ett 'Student'-objekt.
+     */
     private static void init()
     {
         person = new Person("Rutherford B. Hayes", 221004000, "Ohio State U.S.",
                 71);
         student = new Student("John Quincy Adams", 480711000,
-                "Massachusetts U.S.", 81, "Harvard", null, 'A');
+                "Massachusetts U.S.", 81, "Harvard", null, 'B');
     }
 
+    /**
+     * Testar alla metoder hos 'Person'-objektet.
+     */
     private static void testaPerson()
     {
         /* Skriv ut initialt läge. */
-        prompt("Data för 'person':");
+        prompt("Initial data för 'person':");
         prompt(person.toString());
 
         /* Anropa alla metoder .. */
-        person.byterAdress("helt ny ADRESS");
-        person.byterNamn("helt nytt NAMN");
+        person.byterAdress("New York City");
+        person.byterNamn("Theodore Roosevelt");
         person.fyllerAr();
 
-        /* Skriv ut information om 'Person'-objekten.
-         * Använder '\n' newlines trots att det inte är särskilt portabelt .. */
-        prompt ("\nData för 'person':\n-------"
-              + "\nNamn:         " + person.hamtaNamn()
-              + "\nPersonnummer: " + person.hamtaPersnr()
-              + "\nAdress:       " + person.hamtaAdress());
+        /* Skriv ut uppdaterat läge. */
+        prompt(NEWLINE + "Uppdaterad data för 'person':");
+        prompt(person.toString());
     }
-    
+
+    /**
+     * Testar alla metoder hos 'Student'-objektet.
+     */
     private static void testaStudent()
     {
         /* Skriv ut initialt läge. */
-        prompt("Data för 'student':");
+        prompt(NEWLINE + NEWLINE + "Initial data för 'student':");
         prompt(student.toString());
 
         /* Anropa alla metoder .. */
-        student.byterAdress("HELT NY adress");
-        student.byterNamn("HELT NYTT namn");
+        student.byterAdress("Kansas City");
+        student.byterNamn("John Lithgow");
         student.fyllerAr();
-        student.
+        student.andraSkola("Film School");
+        student.andraKurs("Amazing Acting 101");
+        student.andraBetyg('A');
 
-        /* Skriv ut information om 'Student'-objekten.
-         * Använder '\n' newlines trots att det inte är särskilt portabelt .. */
-        prompt ("\nData för 'person':\n-------"
-              + "\nNamn:         " + person.hamtaNamn()
-              + "\nPersonnummer: " + person.hamtaPersnr()
-              + "\nAdress:       " + person.hamtaAdress());
+        /* Skriv ut uppdaterat läge. */
+        prompt(NEWLINE + "Uppdaterad data för 'student':");
+        prompt(student.toString());
     }
-    
+
     /**
      * "Wrapper" runt System.out.println() för mindre skrivande.
      * @param s     textsträng att skriva ut
