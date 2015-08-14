@@ -17,6 +17,7 @@ public class Student extends Person
 {
     private static final String INGEN_KURS  = "Ej anmäld till någon kurs";
     private static final String INGEN_SKOLA = "Ej registrerad på någon skola";
+    private static final char   INGET_BETYG = 'G';
 
     private String skola;
     private String kurs;
@@ -57,7 +58,20 @@ public class Student extends Person
      */
     public void andraBetyg(char betyg)
     {
-        this.betyg = betyg;
+        betyg = Character.toUpperCase(betyg);
+
+        switch (betyg) {
+        case 'A':
+        case 'B':
+        case 'C':
+        case 'D':
+        case 'E':
+        case 'F':
+            this.betyg = betyg;
+            break;
+        default:
+            this.betyg = INGET_BETYG;
+        }
     }
 
     /**
