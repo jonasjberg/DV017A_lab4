@@ -1,4 +1,3 @@
-
 /**
  * DV017A :: Grundläggande programmering i Java
  * 860224 Jonas Sjöberg
@@ -8,6 +7,8 @@
  * Labb #4    Uppgift 3
  */
 
+/* Eclipse-projektet för Labb #2 länkas in till det aktuella projektet så att
+ * paketet 'main' och klassen 'Person' blir tillgängliga.  */
 import main.Person;
 
 /**

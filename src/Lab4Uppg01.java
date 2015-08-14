@@ -35,6 +35,8 @@ public class Lab4Uppg01
         getInput(getNumberOfInputs(), numbers);
         doCalculation(numbers);
         printResults();
+
+        System.exit(0);
     }
 
     /**
