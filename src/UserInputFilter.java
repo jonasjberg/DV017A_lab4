@@ -1,4 +1,3 @@
-
 /**
  *  DV017A :: Grundläggande programmering i Java
  *  860224 Jonas Sjöberg
