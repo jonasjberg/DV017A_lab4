@@ -85,5 +85,4 @@ public class Konto
     {
         return rantesats;
     }
-
 }

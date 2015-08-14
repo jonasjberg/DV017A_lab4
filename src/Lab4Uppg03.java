@@ -35,10 +35,18 @@ public class Lab4Uppg03
      */
     private static void init()
     {
-        person = new Person("Rutherford B. Hayes", 221004000, "Ohio State U.S.",
-                71);
-        student = new Student("John Quincy Adams", 480711000,
-                "Massachusetts U.S.", 81, "Harvard", null, 'B');
+        person = new Person("Rutherford B. Hayes",      /* Namn             */
+                            221004000,                  /* Personnummer     */
+                            "Ohio State U.S.",          /* Adress           */
+                            71);                        /* Ålder            */
+
+        student = new Student("John Quincy Adams",      /* Namn             */
+                              480711000,                /* Personnummer     */
+                              "Massachusetts U.S.",     /* Adress           */
+                              81,                       /* Ålder            */
+                              "Harvard",                /* Skola            */
+                              null,                     /* Kurs (ej anmäld) */
+                              'B');                     /* Betyg            */
     }
 
     /**
