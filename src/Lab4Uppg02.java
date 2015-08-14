@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Vector;
 
 /**
- * Klass 'Lab4Uppg02' testar klassen 'Konto'
+ * Klass 'Lab4Uppg02' testar klassen 'Konto'.
  */
 public class Lab4Uppg02
 {
@@ -38,7 +38,7 @@ public class Lab4Uppg02
         konton.get(1).uttag(4500);
 
         info(konton);
-        
+
         System.exit(0);
     }
 

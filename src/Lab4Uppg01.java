@@ -17,7 +17,7 @@ public class Lab4Uppg01
     private final static String TXT_QUERY            = "Hur många tal vill du mata in (max 30)? ";
     private final static int    MAX_NUMBER_OF_INPUTS = 30;
     private final static int    MIN_NUMBER_OF_INPUTS = 0;
-    
+
     private static List<Integer> numbers = new Vector<Integer>();
     private static int           sum;
     private static double        average;
@@ -26,7 +26,7 @@ public class Lab4Uppg01
 
     /* Använder en "Logger" för att hantera debug-meddelanden */
     private static Logger        logger  = Logger.getAnonymousLogger();
-    
+
     /* MAIN */
     public static void main(String[] args)
     {
